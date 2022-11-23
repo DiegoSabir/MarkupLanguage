@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+  <element name="pelicula">
+    <complexType>
+      <attribute name="titulo" type="string"/>
+<attribute name="minutos" type="integer"/>
+    </complexType>
+  </element>
+</schema>

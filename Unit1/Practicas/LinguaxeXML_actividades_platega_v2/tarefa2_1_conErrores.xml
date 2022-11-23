@@ -1,0 +1,20 @@
+﻿<!-- colección_musical.xml ->
+<xml versión="1.1" encoding="utf-8">
+<artista nome="Queen">
+<album nome="A Night at the Opera">
+<canción>Bohemian Rhapsody</Canción>
+<canción>'39</Canción>
+<artista>
+</album>
+<artista nome="R.E.M.">
+<album nome="Life's Rich Pageant">
+<canción>Superman</Canción>
+<canción>These days</Canción>
+</artista>
+</album>
+<artista nome="Iggy Pop">
+<album nome="Brick by Brick>
+<canción>Candy</Canción>
+<canción>My Baby Wants to Rock & Roll</Canción>
+</artista>
+</album>

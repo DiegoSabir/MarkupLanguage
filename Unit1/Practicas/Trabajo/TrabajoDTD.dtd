@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT collection (champions)>
+<!ELEMENT champions (champion+)>
+<!ELEMENT champion (progression, overview, abilities, skins)>
+<!ATTLIST champion name CDATA #REQUIRED>
+<!ATTLIST champion nickname CDATA #REQUIRED>
+
+<!ELEMENT progression (eternals, mastery)>
+<!ELEMENT eternals (series_1, starter_series)>
+<!ELEMENT mastery (#PCDATA)>
+<!ELEMENT series_1 (achievement+)>
+<!ELEMENT starter_series (record1,record2,record3)>
+<!ELEMENT achievement (#PCDATA)>
+<!ATTLIST achievement name CDATA #REQUIRED>
+<!ELEMENT record1 (#PCDATA)>
+<!ATTLIST record1 name CDATA "Epic Monster Killed">
+<!ELEMENT record2 (#PCDATA)>
+<!ATTLIST record2 name CDATA "Structures Destroyed">
+<!ELEMENT record3 (#PCDATA)>
+<!ATTLIST record3 name CDATA "Takedowns">
+
+<!ELEMENT overview (damage, style, difficulty)>
+<!ELEMENT damage EMPTY>
+<!ATTLIST damage type (physical|magic|mixed) #REQUIRED>
+<!ELEMENT style (#PCDATA)>
+<!ATTLIST style type (melee|ranged) #REQUIRED>
+<!ELEMENT difficulty EMPTY>
+<!ATTLIST difficulty level (easy|normal|difficult) #REQUIRED>
+
+<!ELEMENT abilities (P,Q,W,E,R)>
+<!ELEMENT P (#PCDATA)>
+<!ATTLIST P name CDATA #REQUIRED>
+<!ELEMENT Q (#PCDATA)>
+<!ATTLIST Q name CDATA #REQUIRED>
+<!ELEMENT W (#PCDATA)>
+<!ATTLIST W name CDATA #REQUIRED>
+<!ELEMENT E (#PCDATA)>
+<!ATTLIST E name CDATA #REQUIRED>
+<!ELEMENT R (#PCDATA)>
+<!ATTLIST R name CDATA #REQUIRED>
+
+<!ELEMENT skins (skin+)>
+<!ELEMENT skin ANY>
+<!ATTLIST skin name CDATA #REQUIRED>
+<!ATTLIST skin unlock CDATA #IMPLIED>

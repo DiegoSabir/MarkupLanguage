@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<libro>
+  <titulo>El Quijote</titulo>
+  <autor>Miguel de Cervantes</autor>
+  <editorial>Alianza</editorial>
+  <fechaPublicacion>11/01/1987</fechaPublicacion>
+  <isbn>54875444</isbn>
+</libro>

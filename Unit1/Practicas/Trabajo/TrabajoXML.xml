@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE collection SYSTEM "TrabajoDTD.dtd">
+<collection>
+	<champions>
+		<champion name="Aatrox" nickname="The Darkin Blade">
+			<progression>
+				<eternals>
+					<series_1>
+						<achievement name="Chains Yanked">12</achievement>
+						<achievement name="QQ'S">34</achievement>
+						<achievement name="Worlds Ended">56</achievement>
+					</series_1>
+					<starter_series>
+						<record1 name="Epic Monster Killed">12</record1>
+						<record2 name="Structures Destroyed">34</record2>
+						<record3 name="Takedowns">56</record3>
+					</starter_series>
+				</eternals>
+				<mastery>12345</mastery>
+			</progression>
+			<overview>
+				<damage type="physical"></damage>
+				<style type="melee">Fighter</style>
+				<difficulty level="normal"></difficulty>
+			</overview>
+			<abilities>
+				<P name="Deathbringer Stance">Periodically, Aatrox's next basic attack deals bonus physical damage and heals him, based on the target's max health.</P>
+				<Q name="The Darkin Blade">Aatrox slams his greatsword down, dealing physical damage. He can swing three times, each with a different area of effect.</Q>
+				<W name="Infernal Chains">Aatrox smashes the ground, dealing damage to the first enemy hit. Champions and large monsters have to leave the impact area quickly or they will be dragged to the center and take the damage again.</W>
+				<E name="Umbral Dash">Passively, Aatrox heals when damaging enemy champions. On activation, he dashes in a direction.</E>
+				<R name="World Ender">Aatrox unleashes his demonic form, fearing nearby enemy minions and gaining attack damage, increased healing, and move speed. If he gets a takedown, this effect is extended.</R>
+			</abilities>
+			<skins>
+				<skin name="Aatrox"></skin>
+				<skin name="Justicar Aatrox" unlock="975"></skin>
+				<skin name="Mecha Aatrox" unlock="1350"></skin>
+				<skin name="Sea Hunter Aatrox" unlock="750"></skin>
+				<skin name="Blood Moon Aatrox" unlock="1820"></skin>
+				<skin name="Prestige Blood Moon Aatrox"></skin>
+				<skin name="Victorious Aatrox"></skin>
+				<skin name="Oddysey Aatrox" unlock="1350"></skin>
+				<skin name="Lunar Eclipse Aatrox" unlock="1350"></skin>
+			</skins>
+		</champion>
+		
+		<champion name="Ahri" nickname="The Nine-Tailed Fox">
+			<progression>
+				<eternals>
+					<series_1>
+						<achievement name="Fatal Flirtations">12</achievement>
+						<achievement name="LDR">34</achievement>
+						<achievement name="On The Rebound">56</achievement>
+					</series_1>
+					<starter_series>
+						<record1 name="Epic Monster Killed">12</record1>
+						<record2 name="Structures Destroyed">34</record2>
+						<record3 name="Takedowns">56</record3>
+					</starter_series>
+				</eternals>
+				<mastery>12345</mastery>
+			</progression>
+			<overview>
+				<damage type="magic"></damage>
+				<style type="ranged">mage</style>
+				<difficulty level="normal"></difficulty>
+			</overview>
+			<abilities>
+				<P name="Essence Theft">After killing 9 minions or monsters, Ahri heals. After talking down an enemy champion, Ahri heals for a greater amount.</P>
+				<Q name="Orb of Deception">Ahri sends out and pulls back her orb, dealing magic damage on the way out and true damage on the way back.</Q>
+				<W name="Fox Fire">Ahri gains a brief burst of move speed and releases three fox-fires, that lock onto and attack nearby enemies.</W>
+				<E name="Charm">Ahri blows a kiss that damages and charms an enemy it encounters, instantly stopping movement abilities and causing them to walk harmlessly towards her.</E>
+				<R name="Spirit Rush">Ahri dashes forward and fires essence bolts, damaging nearby enemies. Spirit rush can be cast up to three times before going on cooldown, and gains additional recasts when taking down enemy champions.</R>
+			</abilities>
+			<skins>
+				<skin name="Ahri"></skin>
+				<skin name="Dynasty Ahri" unlock="975"></skin>
+				<skin name="Midnight Ahri" unlock="750"></skin>
+				<skin name="Foxfire Ahri" unlock="975"></skin>
+				<skin name="Popstar Ahri" unlock="975"></skin>
+				<skin name="Challeger Ahri"></skin>
+				<skin name="Academy Ahri" unlock="750"></skin>
+				<skin name="Arcade Ahri" unlock="1350"></skin>
+				<skin name="Star Guardian Ahri" unlock="1820"></skin>
+				<skin name="K/DA Ahri" unlock="1350"></skin>
+				<skin name="Prestige K/DA Ahri" ></skin>
+				<skin name="Elderwood Ahri" unlock="1350"></skin>
+				<skin name="Spirit Blossom Ahri" unlock="1820"></skin>
+				<skin name="K/DA All Out Ahri" unlock="1350"></skin>
+				<skin name="Coven Ahri" unlock="1350"></skin>
+				<skin name="Arcana Ahri" unlock="1350"></skin>
+			</skins>
+		</champion>
+	</champions>
+</collection>

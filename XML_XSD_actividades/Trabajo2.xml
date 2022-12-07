@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seleccion>
+	<datos>
+		<nombre>Seleccion Brasileña de Futbol</nombre>
+		<confederacion>CONMEBOL</confederacion>
+		<apodo>Canarinha</apodo>
+		<rankingFIFA>1</rankingFIFA>
+	</datos>
+	<plantilla>
+		<tecnicos>
+			<tecnico>Tite</tecnico>
+			<tecnico>Cleber Xavier</tecnico>
+			<tecnico>Matheus Bachi</tecnico>
+			<tecnico>Claudio Taffarel</tecnico>
+			<tecnico>Fabio Mahseredijian</tecnico>
+		</tecnicos>
+		<jugadores>
+			<jugador>
+				<nombre>Alisson</nombre>
+				<apellidos>Ramses Becker</apellidos>
+				<posicion>Portero</posicion>
+				<club>Liverpool F.C.</club>
+				<dorsal>1</dorsal>
+			</jugador>
+		</jugadores>
+	</plantilla>
+</seleccion>

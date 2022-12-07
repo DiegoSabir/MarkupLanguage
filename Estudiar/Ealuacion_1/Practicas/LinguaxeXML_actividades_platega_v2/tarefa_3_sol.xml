@@ -1,0 +1,17 @@
+<?xml version="1.1" encoding="utf-8"?>
+<!-- biblioteca.xml -->
+<biblioteca>
+  <libro ISBN="0596002920" ano_publicación="2002">
+    <editorial>O'Reilly</editorial>
+    <título>XML in a Nutshell, 2nd Edition</título>
+    <autor>Elliotte Rusty Harold</autor>
+    <autor>W. Scott Means</autor>
+    <descrición xml:lang="en">Provides developers with a comprehensive guide to the rapidly evolving XML space.</descrición>
+    <descrición xml:lang="gl">Guía sinxela da linguaxe XML orientada aos desarrolladores.</descrición>
+  </libro>
+  <libro ISBN="9780470477250" ano_publicación="2009">
+    <editorial>Wrox</editorial>
+    <título>Beginning XSLT and XPath</título>
+    <autor>Ian Williams</autor>
+  </libro>
+</biblioteca>

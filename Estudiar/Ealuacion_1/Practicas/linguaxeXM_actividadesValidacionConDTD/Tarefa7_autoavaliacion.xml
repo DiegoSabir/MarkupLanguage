@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Exercizo avaliación -->
+<!DOCTYPE comunidades SYSTEM "Tarefa7_comunidades.dtd">
+<comunidades>
+  <comunidade codigo="12">
+    <diadacomunidade dia="25" mes="07"/>
+    <nome>Galicia</nome>
+    <presidente>
+      <nome>Alberto</nome>
+      <apelidos>Nuñez Feijoo</apelidos>
+    </presidente>
+    <provincias>
+      <provincia codigo="36" costa="si" capital="L36001">
+        <nome>Pontevedra</nome>
+        <superficie unidade="km2">4494</superficie>
+        <localidades>
+          <localidade codigo="L36001">
+            <nome>Pontevedra</nome>
+            <costa>si</costa>
+            <habitantes>82400</habitantes>
+            <festivos>
+              <festivo dia="11" mes="07">
+                <motivo>San Bieito</motivo>
+              </festivo>
+              <festivo dia="13" mes="02"/>
+            </festivos>
+          </localidade>
+          <localidade codigo="L36002">
+            <nome>Vigo</nome>
+            <costa>si</costa>
+            <habitantes>297241</habitantes>
+            <festivos>
+              <festivo dia="01" mes="04">
+                <motivo>Reconquista</motivo>
+              </festivo>
+              <festivo dia="16" mes="08">
+                <motivo>San Roque</motivo>
+              </festivo>
+            </festivos>
+          </localidade>
+        </localidades>
+      </provincia>
+    </provincias>
+  </comunidade>
+  <comunidade codigo="03">
+    <diadacomunidade dia="08" mes="09"/>
+    <nome>Asturias</nome>
+    <presidente>
+      <nome>Javier</nome>
+      <apelidos>Fernández</apelidos>
+    </presidente>
+    <provincias>
+      <provincia codigo="33" costa="si" capital="L33001">
+        <nome>Asturias</nome>
+        <superficie unidade="km2">10603</superficie>
+        <localidades>
+          <localidade codigo="L33001">
+            <nome>Oviedo</nome>
+            <costa>non</costa>
+            <habitantes>225391</habitantes>
+            <festivos>
+              <festivo dia="21" mes="05">
+                <motivo>Martes de campo</motivo>
+              </festivo>
+              <festivo dia="21" mes="07"/>
+            </festivos>
+          </localidade>
+          <localidade codigo="L33002">
+            <nome>Gijón</nome>
+            <costa>si</costa>
+            <habitantes>277559</habitantes>
+            <festivos>
+              <festivo dia="12" mes="02">
+                <motivo>Antroxu</motivo>
+              </festivo>
+              <festivo dia="29" mes="06">
+                <motivo>San Pedro</motivo>
+              </festivo>
+            </festivos>
+          </localidade>
+        </localidades>
+      </provincia>
+    </provincias>
+  </comunidade>
+</comunidades>

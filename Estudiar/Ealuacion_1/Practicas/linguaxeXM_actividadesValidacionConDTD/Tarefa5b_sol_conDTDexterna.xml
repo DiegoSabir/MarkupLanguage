@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE reservas SYSTEM "Tarefa5b_DTD_sol.dtd">
+<reservas ano="2017">
+  <reserva local="polideportivo" bonificacion="0.2">
+  <data mes="enero" dia="15" />
+  <evento>Campeonato Badminton</evento>
+  <clienteEmpresa>AlfaSA</clienteEmpresa>
+  </reserva>
+</reservas>
+
+
+
+

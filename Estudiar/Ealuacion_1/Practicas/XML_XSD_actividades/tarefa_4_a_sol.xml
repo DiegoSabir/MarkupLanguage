@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<instituto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="tarefa_4_a_sol.xsd">
+<alumno numExpedente="123" nome="Alicia María"
+apelido1="Casal" apelido2="Ferreiro"/>
+<alumno numExpedente="155" nome="Fernando" apelido1="Puga"/>
+<profesor NRP="1234A590" nome="Carme"
+apelido1="Bouza" apelido2="Dominguez"/>
+<profesor NRP="3332A590" nome="Mariña"
+apelido1="Cerviño" apelido2="Dominguez"/>
+<alumno numExpedente="3442" nome="Fernando"
+apelido1="Puga" apelido2="Prado"/>
+</instituto>

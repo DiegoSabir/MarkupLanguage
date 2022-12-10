@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE tema SYSTEM "pag05_tema.dtd">
+<tema unidade="5" titulo="A linguaxe XML">
+  <autor>Sabela Varela</autor>
+  <apartado numero="1">
+		Contido do apartado 1
+  </apartado>
+  <apartado numero="2">
+		Contido do capitulo 2
+  </apartado>
+</tema>

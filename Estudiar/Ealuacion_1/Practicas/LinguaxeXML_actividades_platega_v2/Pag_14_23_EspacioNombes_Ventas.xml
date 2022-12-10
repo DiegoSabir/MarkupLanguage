@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<venda xmlns="http://www.atendadepaco.com/espazosdenomes/vendas/" xmlns:cl="http://www.atendadepaco.com/espazosdenomes/clientes/" xmlns:pr="http://www.atendadepaco.com/espazosdenomes/produtos/">
+<cl:cliente>
+<cl:cod>CL09384</cl:cod>
+<cl:nome>Uxío Fuentes Neira</cl:nome>
+<cl:enderezo>Rúa Europa 24, 3ºA</cl:enderezo>
+<cl:teléfono>555098433</cl:teléfono>
+</cl:cliente>
+<pr:produtos>
+<pr:produto>
+<pr:cod>LACT02330993</pr:cod>
+<pr:descrición>Leite enteira envase 1L</pr:descrición>
+</pr:produto>
+<pr:produto>
+<pr:cod>LACT00493112</pr:cod>
+<pr:descrición>Margarina vexetal tarrina 250g</pr:descrición>
+</pr:produto>
+</pr:produtos>
+<importe_total>16,34€</importe_total>
+</venda>

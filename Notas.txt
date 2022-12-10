@@ -1,0 +1,14 @@
+-- DTD
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT coleccion (personajes)>			---> Crea la raiz y sus ramas
+<!ELEMENT personajes (personaje*)>			---> Indica cuantas veces se puede repetir esa rama
+<!ELEMENT personajes (personaje+)>
+<!ELEMENT personajes (personaje+)>
+
+<!ELEMENT personaje (perfil, habilidades, skins)>		---> Crea ramas de las ramas
+<!ATTLIST personaje name CDATA #REQUIRED>		---> Crea atributos de la rama
+<!ATTLIST personaje nickname CDATA #REQUIRED>
+
+----------------------------------------------
+-- XML
+

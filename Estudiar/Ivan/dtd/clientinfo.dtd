@@ -1,0 +1,44 @@
+<!ELEMENT informacioncliente (desc?, servicetype, servertype, t:cliente, s:cliente, connection*)>
+<!ATTLIST informacioncliente 
+name CDATA #FIXED "WoeRO" 
+typegame CDATA #FIXED "MMORPG"
+xmlns:t CDATA #FIXED "http://www.woero.com/download/tclientes/"
+xmlns:s CDATA #FIXED "http://www.woero.com/download/sclientes/">
+<!ELEMENT t:cliente (t:name, t:normal, t:full)>
+<!ELEMENT t:name (#PCDATA)>
+<!ELEMENT t:normal (#PCDATA)>
+<!ELEMENT t:full (#PCDATA)>
+<!ELEMENT s:cliente (s:name, s:normal, s:full)>
+<!ELEMENT s:name (#PCDATA)>
+<!ELEMENT s:normal (#PCDATA)>
+<!ELEMENT s:full (#PCDATA)>
+<!ELEMENT desc (#PCDATA)>
+<!ELEMENT servicetype (#PCDATA)>
+<!ELEMENT servertype (#PCDATA)>
+<!ELEMENT connection (data_ini, display, address, port, version, langtype+, account, usuarios?, (registrationaccount1 | registrationaccount2))>
+<!ATTLIST connection 
+servidor (1 | 2) #REQUIRED
+tipo (PlayerKill | DontPlayerKill) #REQUIRED
+Online (Pocas | Muchas) "Muchas">
+<!ELEMENT data_ini EMPTY>
+<!ENTITY  % data
+"ano CDATA #REQUIRED
+mes (Enero | Febrero | Marzo | Abril | Mayo | Junio | Julio | 
+ Agosto | Septiembre | Octubre | Noviembre | Diciembre) #REQUIRED
+ dia CDATA #REQUIRED">
+ <!ATTLIST data_ini %data; >
+<!ELEMENT display (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT version (#PCDATA)>
+<!ELEMENT langtype (#PCDATA)>
+<!ELEMENT account (admin | responsible)*>
+<!ELEMENT admin (#PCDATA)>
+<!ATTLIST admin id ID #REQUIRED>
+<!ELEMENT responsible (#PCDATA)>
+<!ATTLIST responsible ref IDREFS #IMPLIED>
+<!ELEMENT usuarios (userprueba)*>
+<!ELEMENT userprueba (#PCDATA)>
+<!ATTLIST userprueba codigos NMTOKENS #REQUIRED>
+<!ELEMENT registrationaccount1 (#PCDATA)>
+<!ELEMENT registrationaccount2 (#PCDATA)>

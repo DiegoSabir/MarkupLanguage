@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="informacioncliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="desc" type="xs:string"/>
+        <xs:element name="servicetype" type="xs:string"/>
+        <xs:element name="servertype" type="xs:string"/>
+        <xs:element ref="connection"/>
+      </xs:sequence>
+<xs:attribute name="name" type="xs:string"/>
+<xs:attribute name="typegame" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="connection">
+  <xs:complexType>
+  <xs:sequence>
+<xs:element ref="data_ini"/>
+<xs:element name="display" type="xs:string"/>
+<xs:element name="address" type="xs:string"/>
+<xs:element name="port" type="xs:unsignedLong"/>
+<xs:element name="version" type="xs:unsignedByte"/>
+<xs:element name="langtype" type="xs:unsignedByte"/>
+<xs:element ref="account"/>
+<xs:element ref="usuarios"/>
+<xs:element name="registrationaccount" type="xs:string"/>
+  </xs:sequence>
+<xs:attribute name="servidor" type="xs:unsignedByte" use="required"/>
+<xs:attribute name="tipo" type="xs:string" use="required"/>
+<xs:attribute name="Online" type="xs:string" use="required"/>
+  </xs:complexType>
+  </xs:element>
+  
+<xs:element name="data_ini">
+<xs:complexType>
+<xs:attribute name="ano" type="xs:unsignedLong" use="required"/>
+<xs:attribute name="mes" type="xs:string" use="required"/>
+<xs:attribute name="dia" type="xs:unsignedByte" use="required"/>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="account">
+<xs:complexType>
+ <xs:sequence>
+        <xs:element ref="admin" maxOccurs="unbounded"/>
+        <xs:element ref="responsible" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="admin">
+<xs:complexType>
+    <xs:simpleContent>
+		  <xs:extension base="tipoNomeLongo">
+<xs:attribute name="id" type="IDadmin" use="required"/>
+		  </xs:extension>
+		</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="responsible">
+<xs:complexType>
+    <xs:simpleContent>
+		  <xs:extension base="tipoNomeLongo">
+			<xs:attribute name="ref" type="REFresponsable"  use="required"/>
+      </xs:extension>
+		</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="usuarios">
+<xs:complexType>
+ <xs:sequence>
+        <xs:element ref="userprueba" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="userprueba">
+<xs:complexType>
+<xs:simpleContent>
+		  <xs:extension base="tipoNomeLongo">
+			<xs:attribute name="codigos" type="tipoCodigo"  use="required"/>
+      </xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+
+ <xs:simpleType name="IDadmin">
+ <xs:restriction base="xs:string">
+ <xs:pattern value="A[0-9]{7}"/>
+ </xs:restriction>
+ </xs:simpleType>
+ 
+ <xs:simpleType name="REFresponsable">
+ <xs:restriction base="xs:string">
+ <xs:pattern value="[0-9]{7}A"/>
+ </xs:restriction>
+ </xs:simpleType>
+ 
+  <xs:simpleType name="tipoCodigo">
+ <xs:restriction base="xs:string">
+ <xs:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"/>
+ </xs:restriction>
+ </xs:simpleType>
+
+<xs:simpleType name ="tipoNomeLongo">
+<xs:restriction base="xs:string">
+<xs:maxLength value="150"/>
+</xs:restriction> 
+ </xs:simpleType>
+
+</xs:schema>

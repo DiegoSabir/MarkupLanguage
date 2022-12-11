@@ -28,6 +28,5 @@ fixed = "1" 			---> tiene un valor fijo
 <xs:pattern value = "[0-9]{3}A"
 
 </xs:schema> ---> Para finalizar
------------------------------------------------------------------------
-XML
+
 

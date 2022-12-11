@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- DIEGO RIBAS GONZALEZ -->
+<selecciones xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ApuntesXSD.xsd">
+  <equipo sigla="CBF" federacion="CONMEBOL">
+		<cuerpotecnico>
+				<tecnico funcion="Entrenador">Tite</tecnico>
+				<tecnico funcion="Segundo Entrenador">Cleber Xavier</tecnico>
+				<tecnico funcion="Segundo Entrenador">Matheus Bachi</tecnico>
+				<tecnico funcion="Entrenador de Porteros">Claudio Taffarel</tecnico>
+				<tecnico funcion="Preparador Fisico">Fabio Mahseredijian</tecnico>
+		</cuerpotecnico>
+			
+		<plantilla>
+			<jugador dorsal="20">
+				<nombrecompleto>Vinicius Jose Paixao de Oliveira Junior</nombrecompleto>
+				<rol>Delantero</rol>
+				<club>Real Madrid F.C.</club>
+			</jugador>
+				
+		</plantilla>
+	</equipo>
+</selecciones>

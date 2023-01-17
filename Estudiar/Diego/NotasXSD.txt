@@ -1,0 +1,32 @@
+complexType ---> Crea una rama
+
+sequence --> se tiene que escribir secualmente en el xml
+all --> da igual el orden en que las escribas en el xml
+choice --> solo puedes escribir una opcion en el xml
+
+<xs:element ref = "paises"/>  ---> para crear una cabeza padre que contiene hijos o indicar sus atributos
+<xs:element name = "paises">
+------
+attribute ---> siempre van despues de sequence
+
+-----
+type = "xs:string"/>		---> para letras 
+type = "xs:unsignedByte"/>	---> para numeros entre 0 hasta 45
+type = "xs:short"/>		---> para numeros entre -1 hasta 12534
+type = "xs:unsignedLong"/>	---> para numeros muy largos (aprox hasta 9 cifras)
+-----
+minOccurs = "1"			---> para indicar el minimo
+maxOccurs = "unbounded"		---> para indicar el maximo
+-----
+use = "required"
+use = "optional"
+-----
+fixed = "1" 			---> tiene un valor fijo
+
+
+<xs:pattern value = "[0-9][0-9][0-9]A"
+<xs:pattern value = "[0-9]{3}A"
+
+</xs:schema> ---> Para finalizar
+
+

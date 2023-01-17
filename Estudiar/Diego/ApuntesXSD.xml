@@ -2,13 +2,20 @@
 <!-- DIEGO RIBAS GONZALEZ -->
 <selecciones xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="ApuntesXSD.xsd">
-  <equipo sigla="CBF" federacion="CONMEBOL">
+  <equipo sigla="CBF" federacion="CONMEBOL" rankingFIFA="1">
+  
+  
+  <juntadirectiva>
+    <presidente>Pepe</presidente> 
+  </juntadirectiva>
+  
+  
 		<cuerpotecnico>
-				<tecnico funcion="Entrenador">Tite</tecnico>
-				<tecnico funcion="Segundo Entrenador">Cleber Xavier</tecnico>
-				<tecnico funcion="Segundo Entrenador">Matheus Bachi</tecnico>
-				<tecnico funcion="Entrenador de Porteros">Claudio Taffarel</tecnico>
-				<tecnico funcion="Preparador Fisico">Fabio Mahseredijian</tecnico>
+      <tecnico funcion="Entrenador">Tite</tecnico>
+      <tecnico funcion="Segundo Entrenador">Cleber Xavier</tecnico>
+      <tecnico funcion="Segundo Entrenador">Matheus Bachi</tecnico>
+      <tecnico funcion="Entrenador de Porteros">Claudio Taffarel</tecnico>
+      <tecnico funcion="Preparador Fisico">Fabio Mahseredijian</tecnico>
 		</cuerpotecnico>
 			
 		<plantilla>

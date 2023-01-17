@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	
 	<xs:element name="selecciones">
 		<xs:complexType>
 			<xs:sequence>
@@ -12,13 +13,28 @@
 	<xs:element name="equipo">
 		<xs:complexType>
 			<xs:all>
+			  <xs:element ref="juntadirectiva"/>
 				<xs:element ref="cuerpotecnico"/>
 				<xs:element ref="plantilla"/>
 			</xs:all>
 			<xs:attribute name="sigla" type="xs:string" use="required"/>
 			<xs:attribute name="federacion" type="xs:string" use="required"/>
+			<xs:attribute name="rankingFIFA" type="xs:unsignedByte" fixed="1"/>
 		</xs:complexType>
 	</xs:element>
+	
+	
+	<xs:element name="juntadirectiva">
+	  <xs:complexType>
+  	  <xs:choice>
+        <xs:element name="dueño" type="TipoNombreLargo"/>
+        <xs:sequence>
+          <xs:element name="presidente" type="TipoNombreLargo"/>
+          <xs:element name="subpresidente" type="TipoNombreLargo"/>
+        </xs:sequence>
+  	  </xs:choice>
+	  </xs:complexType>
+  </xs:element>
 	
 	
 	<xs:element name="cuerpotecnico">
@@ -56,7 +72,6 @@
 	
 	
 	<xs:element name="jugador">
-	
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="nombrecompleto" type="TipoNombreLargo"/>
@@ -73,6 +88,8 @@
       <xs:maxLength value="150"/>
     </xs:restriction>
   </xs:simpleType>
+  
+  
 	<xs:simpleType name="espacios">
     <xs:restriction base="xs:string">
       <xs:maxLength value="50"/>

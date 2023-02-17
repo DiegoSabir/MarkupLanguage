@@ -1,0 +1,19 @@
+-- DTD
+<!ELEMENT coleccion (personaje)>			---> Aparecera solo 1 una vez
+<!ELEMENT coleccion (personaje*)>			---> Puede no aparecer y si aparece puede repetirse muchas veces
+<!ELEMENT coleccion (personaje+)>			---> Aparecera 1 vez o muchas veces
+<!ELEMENT coleccion (personaje?)>			---> Aparecera 1 vez o nunca
+---
+<!ELEMENT personaje EMPTY>				---> No contiene ningun dato
+<!ELEMENT personaje (#PCDATA)>			---> Solo texto o nada	
+<!ELEMENT personaje ANY>				---> Cualquier tipo de dato
+-----
+<!ELEMENT genero (hombre|mujer|helicoptero)>		---> Para hacer elecciones
+
+-----
+<!ELEMENT personaje (perfil, habilidades, skins)>		---> Crea ramas de las ramas
+<!ATTLIST personaje name CDATA #REQUIRED>		---> Crea atributos de la rama
+<!ATTLIST personaje nickname CDATA #REQUIRED>
+----------------------------------------------
+
+

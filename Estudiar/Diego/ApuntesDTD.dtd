@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT selecciones (equipo+)>
+<!ELEMENT equipo (cuerpotecnico, plantilla)>
+<!ATTLIST equipo 
+sigla CDATA #REQUIRED
+federacion CDATA #REQUIRED>
+<!ELEMENT cuerpotecnico (tecnico+)>
+<!ELEMENT tecnico (#PCDATA)>
+<!ATTLIST tecnico
+funcion CDATA #REQUIRED>
+<!ELEMENT plantilla (jugador+)>
+<!ELEMENT jugador (nombrecompleto, rol+, club+, posicion+)>
+<!ATTLIST jugador
+dorsal CDATA #REQUIRED>
+<!ELEMENT nombrecompleto (#PCDATA)>
+<!ELEMENT rol (#PCDATA)>
+<!ELEMENT club (#PCDATA)>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<venda>
+  <cliente cod="CL09384">
+    <nome>Uxío Fuentes Neira</nome>
+    <enderezo>Rúa Europa 24, 3ºA</enderezo>
+  </cliente>
+  <produtos>
+    <produto cod="LACT093">
+      <descrición>Leite enteira envase 1L</descrición>
+    </produto>
+    <produto cod="LACT012">
+      <descrición>Margarina vexetal tarrina 250g</descrición>
+    </produto>
+  </produtos>
+  <importe>16,34€</importe>
+</venda>

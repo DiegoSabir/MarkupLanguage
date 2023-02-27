@@ -4,7 +4,11 @@
   <xsl:template match="libro">
       <xsl:value-of select="titulo"/>
     <xsl:value-of select="autor"/>
-  </xsl:template>
+    <xsl:apply-templates select="fechaPublicacion"/>
+   </xsl:template>
+   <xsl:template match="fechaPublicacion">
+      <xsl:value-of select="@año"/>
+   </xsl:template>
 </xsl:stylesheet>
 
 

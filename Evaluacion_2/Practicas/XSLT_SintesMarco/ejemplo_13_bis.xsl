@@ -7,7 +7,7 @@
 <!--      <xsl:apply-templates /> -->
     </html>
   </xsl:template>
-
+  
   <xsl:template match="libro">
      <p><xsl:value-of select="autor"/></p>
   </xsl:template>

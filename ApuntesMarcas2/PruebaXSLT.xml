@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="C:\Users\diego\Documents\GitHub\MarkupLanguage\ApuntesMarcas2"?>
+<catalogo>
+    <pelicula titulo="Ant-Man y la avispa: Quantumania">
+      <estreno>2023</estreno>
+      <genero>Accion</genero>
+      <duracion>125</duracion>
+	    <origen>Estados Unidos</origen>
+      <horarios>
+        <hora>15:00</hora>
+        <hora>18:00</hora>
+        <hora>21:00</hora>
+	    </horarios>
+    </pelicula>
+
+    <pelicula titulo="El gato con botas: El ultimo deseo">
+      <estreno>2022</estreno>
+      <genero>Animacion</genero>
+      <duracion>100</duracion>
+	    <origen>España</origen>
+      <horarios>
+        <hora>12:00</hora>
+        <hora>15:00</hora>
+        <hora>18:00</hora>
+        <hora>21:00</hora>
+	    </horarios>
+    </pelicula>
+
+    <pelicula titulo="3D Avatar: El sentido del agua">
+      <estreno>2022</estreno>
+      <genero>Ciencia Ficcion</genero>
+      <duracion>192</duracion>
+	    <origen>Estados Unidos</origen>
+      <horarios>
+        <hora>15:00</hora>
+        <hora>21:00</hora>
+	    </horarios>
+    </pelicula>
+	
+	<pelicula titulo="Sonic 3">
+      <estreno>2024</estreno>
+      <genero>Familiar</genero>
+      <duracion>122</duracion>
+	    <origen>Japon</origen>
+	    <horarios>
+	    </horarios>
+    </pelicula>
+	
+</catalogo>

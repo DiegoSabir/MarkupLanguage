@@ -2,12 +2,13 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
   <xsl:template match="libro">
-     <p><xsl:value-of select="autor"/></p>
- </xsl:template>
-
-  <xsl:template match="libro">
      <p><xsl:value-of select="titulo"/></p>
+     <xsl:apply-templates select="autor"/>
   </xsl:template>
+  
+    <xsl:template match="autor">
+     <p><xsl:value-of select="//autor"/></p>
+ </xsl:template>
 
 </xsl:stylesheet>
 

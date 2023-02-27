@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<equipos>
+  <máquina nome="Copernico">
+    <hardware>
+      <tipo>Sobremesa</tipo>
+      <fabricante>HP</fabricante>
+      <procesador marca="Intel" num_nucleos="4" velocida-de="3,1">i7</procesador>
+      <memoria tecnoloxía="DDR3">8</memoria>
+      <disco tecnoloxía="SATA" capacidade="2000"/>
+      <gravadora tipo="DVD"/>
+    </hardware>
+    <config>
+      <OS>Windows 7</OS>
+      <IP>192.168.20.105</IP>
+      <gateway>192.168.20.1</gateway>
+    </config>
+    <precio>1000</precio>
+    <!--  Descuento: 0% -->
+  </máquina>
+  
+  <máquina nome="Galileo">
+    <hardware>
+      <tipo>Portatil</tipo>
+      <fabricante>Acer</fabricante>
+      <procesador marca="Intel" num_nucleos="4" velocida-de="3">Xeon</procesador>
+      <memoria tecnoloxía="DDR2">2</memoria>
+      <disco tecnoloxía="SCSI" capacidade="200"/>
+      <disco tecnoloxía="SCSI" capacidade="400"/>
+      <disco tecnoloxía="SCSI" capacidade="600"/>
+      <disco tecnoloxía="DATA" capacidade="1000"/>
+      <lectora tipo="DVD"/>
+    </hardware>
+    <config>
+      <role>Servidor de dominio</role>
+      <OS>Ubuntu 22.04</OS>
+      <IP>192.168.20.10</IP>
+      <gateway>192.168.20.1</gateway>
+    </config>
+    <precio>500</precio>
+    <!--  Descuento: 50% -->
+  </máquina>
+  
+  <máquina nome="Kepler">
+  <hardware>
+   <tipo>Rack</tipo>
+   <fabricante>HP</fabricante>
+   <procesador marca="Intel" num_nucleos="2" velocidade="3">Core2 Duo</procesador>
+   <memoria tecnoloxía="DDR2">4</memoria>
+   <disco tecnoloxía="SATA" capacidade="500"/>
+   <disco tecnoloxía="SATA" capacidade="500"/>
+   <disco tecnoloxía="SATA" capacidade="500"/>
+   <gravadora tipo="DVD"/>
+  </hardware>
+  <config>
+   <role>Servidor de arquivos</role>
+   <OS>Ubuntu 8.04 Server</OS>
+   <IP>192.168.10.10</IP>
+   <gateway>192.168.10.1</gateway>
+  </config>
+    <precio>800</precio>
+    <!--  Descuento: 20% -->
+ </máquina>
+ 
+ <máquina nome="Newton">
+  <hardware>
+   <tipo>Rack</tipo>
+   <fabricante>HP</fabricante>
+   <procesador marca="Intel" num_nucleos="2" velocidade="3">Core2 Duo</procesador>
+   <memoria tecnoloxía="DDR2">4</memoria>
+   <disco tecnoloxía="SATA" capacidade="500"/>
+   <disco tecnoloxía="SATA" capacidade="500"/>
+   <gravadora tipo="DVD"/>
+  </hardware>
+  <config>
+   <role></role>
+   <OS></OS>
+   <IP></IP>
+   <gateway></gateway>
+  </config>
+      <precio>200</precio>
+    <!--  Descuento: 80% -->
+ </máquina>
+ 
+</equipos>

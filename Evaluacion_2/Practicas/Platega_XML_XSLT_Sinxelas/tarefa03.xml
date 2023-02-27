@@ -15,6 +15,7 @@
    <gateway>192.168.20.1</gateway>
   </config>
  </máquina>
+ 
  <máquina nome="GALILEO">
   <hardware>
    <tipo>Torre</tipo>

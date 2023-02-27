@@ -6,6 +6,7 @@
          <xsl:apply-templates select="máquina/hardware/disco"/>
        </discos>
     </xsl:template>
+    
     <xsl:template match="disco">
        <xsl:element name="disco">
           <xsl:attribute name="tecnoloxía">
@@ -18,6 +19,7 @@
              <xsl:value-of select="../../@nome" />
           </xsl:attribute>
        </xsl:element>
+       
     </xsl:template>
 </xsl:stylesheet>
 

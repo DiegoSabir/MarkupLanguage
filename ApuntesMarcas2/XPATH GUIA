@@ -1,0 +1,99 @@
+﻿//BUSQUEDAS BASICAS
+Las maquinas que contiene el documento.
+ 	1ºopcion --> /equipos/máquina
+ 	2º opcion --> //máquina
+
+La información de la configuración de las máquinas.
+	1º opcion --> /equipos/máquina/config
+	2º opcion --> //máquina/config
+	3º opcion --> //config
+	
+Las direccións IP.
+	1º opcion --> /equipos/máquina/config/IP
+	2º opcion --> //IP
+
+
+//PARA MOSTRAR EL TEXTO UNICAMENTE
+El sistema operativo de los maquinas
+	1º opcion --> /equipos/máquina/config/OS/text()
+  	2º opcion --> //OS/text()
+
+Muestra unicamente los textos que figuran en config del equipo Copernico.
+	//máquina[@nome="Copernico"]/config/*/text()
+	
+	
+//PARA MOSTRAR ATRIBUTOS
+Mostrar las capacidades del disco
+	1º opcion --> /equipos/máquina/hardware/disco/@capacidade
+	2º opcion --> //@capacidade
+
+//MOSTRAR COMENTARIOS
+Muestra todos los comentarios
+	//comment()
+
+Muestra los comentarios del ordenador Kepler 						
+	1º opcion -->  /equipos/máquina[@nome='Kepler']/comment()
+	2º opcion --> //máquina[@nome='Kepler']/comment()
+
+//FILTRAR
+Mostrar el nombre de las maquinas con tecnologia SCSI
+	1º opcion --> /equipos/máquina/hardware/disco[@tecnoloxía="SCSI"]/../../@nome
+	2º opcion --> //disco[@tecnoloxía='SCSI']/../../@nome
+
+Muestra los atributos de los procesadores con marca "AMD".
+	1º opcion --> /equipos/máquina/hardware/procesador[@marca="AMD"]/@*
+	2º opcion --> //procesador[@marca="AMD"]/@*
+
+Mostrar unicamente el procesador del Galileo
+	1º opcion --> /equipos/máquina[@nome="Galileo"]/hardware/procesador
+	2º opcion --> //máquina[@nome="Galileo"]/hardware/procesador
+
+Mostrar unicamente el procesador que este al principio de la lista
+	1º opcion --> /equipos/máquina[position()=1]/hardware/procesador
+	2º opcion --> //máquina[position()=1]/hardware/procesador
+
+Mostrar la capacidad del ultimo disco introducido en la ultima maquina
+	1º opcion --> /equipos/máquina[last()]/hardware/disco[last()]
+	2º opcion --> //máquina[last()]/hardware/disco[last()]
+
+Mostrar todos los datos del pc.
+	1º opcion --> /equipos/máquina/hardware[fabricante"HP"]/*
+	2º opcion --> //hardware[fabricante"HP"]/*
+
+Muestra las máquinas de tipo "Semitorre" y con sistema operativo "Windows XP".
+	1º opcion --> /equipos/máquina [hardware/tipo="Semitorre" and config/OS="Windows XP"]
+	2º opcion --> //máquina [hardware/tipo="Semitorre" and config/OS="Windows XP"]
+
+Muestra el sistema operativo de las máquinas en las que aparezca el número de núcleos do procesador.
+	1º opcion -> 
+	2º opcion --> //máquina[hardware/procesador/@num_nucleos]/config/OS
+
+Muestra los elementos no vacios, es decir contienen texto.
+	//*[text()]
+
+Muestra los elementos vacios, es decir que no contienen texto.			
+	//*[not(text())]
+
+
+//FUNCIONES
+Muestra las máquinas con un nombre que empiece por "N".
+	1º opcion --> /equipos/máquina[starts-with(@nome,"N")]
+	2º opcion --> //máquina[starts-with(@nome,"N")]
+
+Cuenta cuantos discos tiene el ordenador Galileo
+	1º opcion --> count(/equipos/máquina[@nome="Galileo"]/hardware/disco)
+	2º opcion --> count(//máquina[@nome="Galileo"]/hardware/disco)
+
+Cuenta cuantos discos tiene el ordenador Galileo que no sean SCSI
+	1º opcion --> count(/equipos/máquina[@nome="Galileo"]/hardware/disco[@tecnoloxía!="SCSI"])
+	2º opcion --> count(/equipos/máquina[@nome="Galileo"]/hardware/disco[not(@tecnoloxía="SCSI")])
+	3º opcion --> count(//máquina[@nome="Galileo"]/hardware/disco[@tecnoloxía!="SCSI"])
+	4º opcion --> count(//máquina[@nome="Galileo"]/hardware/disco[not(@tecnoloxía!="SCSI")])
+
+Muestra el nombre de las máquinas con mas de un disco duro.
+	1º opcion --> /equipos/máquina[count(hardware/disco)>1]/@nome
+	2º opcion --> //máquina[count(hardware/disco)>1]/@nome
+
+Suma el precio de los ordenadores
+	1º opcion --> sum(/equipos/máquina/precio)
+	2º opcion --> sum(//precio)

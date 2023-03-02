@@ -1,8 +1,0 @@
-<?xml version="1.1" encoding="utf-8"?>
-<programas>
-<periodo inicio="2008" fin="2013">
-Programas con data &gt; 2008 e &lt; 2013
-<programa nome="Notepad++" licenza="GPL, LGPL" Windows="Si" Linux="No"/>
-<programa nome="XML Copy Editor" licenza="GPL" Windows="Si" Linux="Si"/>
-</periodo>
-</programas>

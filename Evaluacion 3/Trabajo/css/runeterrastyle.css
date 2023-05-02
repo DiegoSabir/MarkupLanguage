@@ -1,0 +1,191 @@
+:link,:visited { 
+	text-decoration:none 								/*Establece que los enlaces no tendrán subrayado cuando estén sin visitar o visitados.*/
+} 
+
+:focus, :active { 
+	outline: 0 											/*Establece que no habrá un contorno visible alrededor de los elementos cuando se seleccionen o hagan clic.*/
+}														 
+
+ul,ol { 
+	list-style:none 									/*Establece que las listas no tendrán viñetas o numeración por defecto.*/
+} 														
+
+h1,h2,h3,h4,h5,h6,pre,code { 
+	font-size:1em; 										/*Establece que el tamaño de fuente predeterminado para los elementos mencionados es de 1em*/
+}
+ 	
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input { 
+	margin:0; padding:0 								/*Establece que no habrá ningún margen o relleno predeterminado para los elementos mencionados.*/
+}
+	 
+a img,:link img,:visited img { 
+	border:none 										/*Establece que las imágenes que se encuentran dentro de un enlace no tendrán borde.*/
+} 			
+
+address { 
+	font-style:normal									/*Establece que la dirección no tendrá estilo de fuente cursiva por defecto.*/ 
+}							
+
+body { 
+	font: .74em Calibri; 								/*Establece el tamaño y la fuente predeterminada que se usará para todo el contenido del cuerpo de la página*/
+	background: #F0DAF2 url(.images/bg.gif) repeat-x;	/*Establece el color de fondo de la página (#F0DAF2 = morado claro) y una imagen de fondo que se repite horizontalmente.*/ 
+	color: #333; 										/*Establece el color predeterminado del texto en la página, (#333 = gris oscuro)*/
+	line-height: 1.6em; 								/*Establece la altura de línea predeterminada del texto en la página.*/
+}
+
+a { 
+	color: #752B7D; 									/*Establece el color del texto del enlace (#752B7D = purpura oscuro)*/
+	text-decoration: underline; 						/*Establece el estilo de subrayado del enlace.*/
+}
+
+a:hover { 
+	color: #808080; 									/*Establece el color del texto del enlace cuando el usuario coloca el raton sobre él.(#808080 = gris)*/
+}
+
+p { 
+	margin: 5px 0 15px;									/*Establece un margen superior 5 píxeles y un margen inferior de 15 píxeles de los párrafos.*/
+}
+
+h2 { 
+	background: url(.images/bullet.gif) no-repeat left 6px; /*Establece el fondo del encabezado con una imagen sin repeticion y  que se coloca a 6 píxeles del borde superior del encabezado.*/
+	font-size: 1.2em; 									/*Establece el tamaño de la fuente del encabezado en 1.2 veces el tamaño de fuente base.*/
+	padding: 0 0 0 9px; 								/*Establece el relleno  del encabezado con un relleno de 9 píxeles en el lado izquierdo del encabezado empujando el texto a la derecha y evita que se superponga con la imagen de la viñeta*/
+}
+
+h2 a { 
+	text-decoration: underline; 						/*Establece la decoración del texto del enlace de los encabezados (h2) con un subrayado.*/
+}
+
+h1 { 
+	font: 2.3em Georgia; 								/*Establece el tamaño y la fuente predeterminada que se usará para los encabezados (h1)*/
+	margin: 0 0 22px; 									/*Establece un margen de 22 píxeles en la parte inferior.*/
+}
+
+h1 a { 
+	color: #FFF; 										/*Establece el color del texto del enlace en los encabezados h1 (#FFF = blanco)*/
+}
+
+h1 a:hover { 
+	color: #CFA5D3; 									/*Establece el color del texto del enlace de los encabezados (h1) cuando el usuario coloca el raton sobre él(#CFA5D3 = morado claro)*/
+}
+
+.clear { 												/*Se utiliza para eliminar la propiedad "float" establecida en los elementos anteriores*/
+	clear: both; 										/*Establece que ningún elemento flotante estará permitido en el lado izquierdo o derecho del elemento que tenga esta clase*/
+}														/*Esto hara que si algo esta flotando a la izquierda o derecha de este elemento lo eliminará para que el elemento quede en su propia línea.*/
+
+.wrap { 												/*Establece estilos para un contenedor que se desea centrar en la página y limitar su ancho.*/
+	margin: 25px auto; 									/*Establece un margen superior e inferior de 25 píxeles y margen izquierdo y derecho automáticos.*/
+	width: 1300px; 										/*Establece el ancho máximo del contenedor en 1300 píxeles.*/
+}
+
+#menu { 
+	float: left; 										/*Establece que el elemento flote a la izquierda de su contenedor.*/
+	margin: 0 0 40px; 									/*Establece un margen inferior de 40 píxeles*/
+}
+
+#menu li { 
+	display: inline; 									/*Establece que los elementos de la lista se muestren en línea en lugar de en bloques separados.*/
+}
+
+#menu li a { 
+	float: left; 										/*Establece que el elemento flote a la izquierda de su contenedor.*/
+	padding: 8px 30px; 									/*Establece los valores de relleno de 8 píxeles para la parte superior y inferior y 30 píxeles para la parte izquierda y derecha para el elemento de enlace.*/
+	margin: 0 1px 0 0; 									/*Establece un margen de 0 píxeles en la parte superior e inferior, 1 píxel en el margen derecho y 0 píxeles en el margen izquierdo. para el elemento de enlace*/
+	color: #EABBEF; 									/*Establece el color del texto del enlace (#EABBEF = rosa oscuro)*/
+	background: #612168;  								/*Establece el color de fondo del enlace (#612168 = morado oscuro)*/
+}
+
+#menu li a:hover { 
+	color: #fff; 										/*Establece el color del texto (#FFF = blanco)*/
+	background: #9842A1; 								/*Establece el color del fondo (#9842A1 = purpura oscuro)*/
+}
+
+#left { 
+	float: left; 										/*Establece que el elemento flote a la izquierda de su contenedor.*/
+	width: 600px; 										/*Establece un ancho de 600 píxeles*/
+	margin: 0 0 40px; 									/*Establece un margen inferior de 40 píxeles*/
+}
+
+#right { 
+	float: right; 										/*Establece que el elemento flote a la derecha de su contenedor.*/
+	width: 600px; 										/*Establece un ancho de 600 píxeles*/
+	margin: 0 0 40px; 									/*Establece un margen inferior de 40 píxeles*/
+	background: #fff; 									/*Establece el color de fondo del enlace (#FFF = blanco)*/
+	border: 1px solid #D1AFD5; 							/*Establece un borde de 1 píxel sólido con un color (#D1AFD5 = purpura claro)*/
+	padding: 1px; 										/*Establece un relleno interior de 1 píxel*/
+}
+
+.box { 
+	background: #E3C6E6; 								/*Establece el color de fondo de los elementos*/
+	border-bottom: 1px solid #D1AFD5; 					/*Establece un borde inferior sólido con un grosor de 1 píxel y un color de borde (#D1AFD5 = morado claro)*/
+	border-right: 1px solid #D1AFD5; 					/*Establece un borde derecho sólido con un grosor de 1 píxel y un color de borde (#D1AFD5 = morado claro)*/
+	color: #9C5CA3; 									/*Establece el color del texto dentro de los elementos (#9C5CA3 = morado)*/
+	padding: 15px; 										/*Establece el relleno interior de los elementos en 15 píxeles en todas las direcciones*/
+}
+
+.box h3 { 
+	text-align: center; 								/*Establece la alineación del texto del elemento (h3) en el centro.*/
+	margin: 0 0 10px; 									/*Establece los márgenes superior, inferior y lateral del elemento (h3) en 0 píxeles, 0 píxeles y 10 píxeles*/
+}
+
+.box p { 
+	margin: 0; 											/*Establece los márgenes superior, inferior y lateral del elemento (p) en 0 píxeles*/
+}
+
+#piedepagina { 
+	clear: both; 										/*Establece que el elemento no debe estar alineado con ningún elemento flotante a su alrededor,  se colocará debajo de cualquier elemento flotante en la página.*/
+	border-top: 5px solid #323232; 						/*Establece un borde superior sólido con un grosor de 5 píxeles y un color de borde*/
+	background: #393939 url(.images/footerbg.gif) repeat-x bottom;	/*Establece el color de fondo del elemento (#393939 = gris oscuro) y utiliza una imagen la cual se repite horizontalmente en la parte inferior*/
+	color: #808080;										/*Establece el color del texto dentro del elemento (#808080 = gris claro)*/ 
+	padding: 10px 0; 									/*Establece el relleno interior del elemento en 10 píxeles en la parte superior e inferior y 0 píxeles en la parte izquierda y derecha*/
+}
+
+#piedepagina ul { 
+	float: left; 										/*Establece que los elementos (ul) deben estar flotando a la izquierda de su contenedor*/
+	width: 200px; 										/*Establece que los elementos (ul) deben tener un ancho de 200 píxeles.*/
+}
+
+#piedepagina li { 
+	padding: 5px 8px; 									/*Establece el relleno interno del elemento (li) en 5 píxeles en la parte superior e inferior y 8 píxeles en la parte izquierda y derecha.*/
+	background: url(.images/dot.gif) repeat-x bottom; 	/*Establece una imagen la cual se repite horizontalmente en la parte inferior*/
+}
+
+#piedepagina li a { 
+	color: #CB799F; 									/*Establece el color del texto para los elementos (a) dentro de los elementos (li) (#CB799F = rosa)*/
+}
+
+#piedepagina li a:hover { 
+	color: #F5CFE1; 									/*Establece el color del texto para los elementos (a) dentro de los elementos (li) cuando el icono del raton esta encima(#F5CFE1 = rosa claro)*/			
+}
+
+#piedepagina #col { 
+	float: right;										/*Establece que el elemento con el ID "col" se colocará en la parte derecha de su contenedor*/ 
+	width: 600px;   									/*Establece que el elemento con el ID "col" tendrá un ancho de 600 píxeles.*/
+}
+#copyright { 
+	background: url(.images/dot.gif) repeat-x top; 		/*Establece una imagen de fondo en repetición horizontal ("repeat-x") para el elemento "div".*/
+	padding: 24px 0 0; 									/*Establece el relleno superior del elemento "div" en 24 píxeles y el relleno inferior en 0 píxeles.*/
+	font-size: .9em; 									/*Establece el tamaño de fuente del texto dentro del elemento "div" en 0.9 veces el tamaño de fuente predeterminado.*/
+}
+
+
+section{
+  display: flex;										/*Establece que los elementos "section" se mostrarán como un contenedor ajustandose automáticamente para llenar el espacio disponible. */
+  width: 1200px;										/*El elemento seccion ocupa un ancho de 600 pixeles*/
+  height: 430px;										/*El elemento seccion ocupa una altura de 430 pixeles*/
+  margin:50px auto 0;									/*Establece los márgenes superior e inferior en 50 píxeles y el margen izquierdo y derecho se ajustarán automáticamente*/
+}
+
+section img{
+  width: 0px;					/*Establece el ancho de las imágenes en 0 píxeles, lo que significa que no se mostrarán inicialmente en la pantalla*/
+  flex-grow: 1;					/*Establece que las imágenes deben crecer o encogerse según sea necesario para llenar el espacio disponible en el contenedor flexible*/
+  object-fit: cover;			/*Establece cómo la imagen debe ajustarse dentro de su contenedorn en este caso que cubra todo el espacio*/
+  opacity: .8;					/*Establece la opacidad de las imágenes en 0.8*/
+  transition: .5s ease;			/*Establece la duración de la animación de transición cuando las imágenes cambian de tamaño con una funcion de aceleracion*/
+}
+
+section img:hover{				
+  width: 300px;					/*Establece que la imagen aumenta a 300 pixeles al estar el icono del raton encima*/
+  opacity: 1;					/*Establece que la imagen vuelve a tener la opacidad inicial*/
+  filter: contrast(120%);		/*Establece que la imagen sube su contraste*/
+}

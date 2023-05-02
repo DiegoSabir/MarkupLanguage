@@ -1,0 +1,81 @@
+:link,:visited { text-decoration:none } :focus, :active { outline: 0 } ul,ol { list-style:none } h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; } ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input { margin:0; padding:0 } a img,:link img,:visited img { border:none } address { font-style:normal }
+
+body { font: .74em Arial, Sans-Serif; background: #F0DAF2 url(.images/bg.gif) repeat-x; color: #333; line-height: 1.6em; }
+
+a { color: #752B7D; text-decoration: underline; }
+
+a:hover { color: #808080; }
+
+p  { margin: 5px 0 15px;}
+
+h2 { background: url(.images/bullet.gif) no-repeat left 6px; font-size: 1.2em; padding: 0 0 0 9px; }
+
+h2 a { text-decoration: underline; }
+
+h1 { font: 2.3em Georgia; margin: 0 0 22px; }
+
+h1 a { color: #fff; }
+
+h1 a:hover { color: #CFA5D3; }
+.clear { clear: both; }
+.wrap { margin: 25px auto; width: 1300px; }
+
+#menu { float: left; margin: 0 0 40px; }
+#menu li { display: inline; }
+#menu li a { float: left; padding: 8px 30px; margin: 0 1px 0 0; color: #EABBEF; background: #612168;  }
+#menu li a:hover { color: #fff; background: #9842A1; }
+
+#left { float: left; width: 600px; margin: 0 0 40px; }
+
+
+#right { float: right; width: 600px; margin: 0 0 40px; background: #fff; border: 1px solid #D1AFD5; padding: 1px; }
+.box { background: #E3C6E6; border-bottom: 1px solid #D1AFD5; border-right: 1px solid #D1AFD5; color: #9C5CA3; padding: 15px; }
+.box h3 { text-align: center; margin: 0 0 10px; }
+.box p { margin: 0; }
+
+
+#piedepagina { clear: both; border-top: 5px solid #323232; background: #393939 url(.images/footerbg.gif) repeat-x bottom; color: #808080; padding: 10px 0; }
+#piedepagina ul { float: left; width: 200px; }
+#piedepagina li { padding: 5px 8px; background: url(.images/dot.gif) repeat-x bottom; }
+#piedepagina li a { color: #CB799F; }
+#piedepagina li a:hover { color: #F5CFE1; }
+#piedepagina #col { float: right; width: 600px;   }
+#copyright { background: url(.images/dot.gif) repeat-x top; padding: 24px 0 0; font-size: .9em; }
+
+	
+.slider-frame {
+	width: 1280px;												/*El slider ocupa un ancho de 1280 pixeles*/
+    height: auto;												/*El slider ocupa una altura automatica (debido a que coge la altura de las imagenes)*/
+	margin:50px auto 0;											/*El slider tendra un margen de 50 pixeles en la parte superior y 0 en la inferior, estara centrado*/
+	overflow: hidden;											/*El slider oculta cualquier contenido que se desborde*/
+}
+
+.slider-frame ul {
+	display: flex;												/*Permite definir como se distribuyen los elementos secundarios adentro*/
+	padding: 0;													/*Establece que no habrá espacio entre el contenido del elemento y su borde.*/
+	width: 400%;												/*Establece que el elemento sea cuatro veces(en este caso 4 al ser 400) más ancho que su contenedor*/
+	animation: slide 20s infinite alternate ease-in-out;		/**/
+}
+
+.slider-frame li {
+	width: 100%;												/*Establece que el elemento ocupe todo el ancho disponible de su contenedor.*/
+	list-style: none;											/*Elimina cualquier estilo de viñeta o numeracion de una lista HTML.*/
+}
+
+.slider-frame img {
+	width: 100%;												/*Establece que la imagen ocupe todo el ancho disponible de su contenedor.*/
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}										/*Establece que cuando la animación comienza (en el 0% de su duración), el valor de la propiedad "margin-left" del elemento será 0, es decir, no habrá margen izquierdo.*/
+	20% {margin-left: 0;}										/**/
+	
+	25% {margin-left: -100%;}									/**/
+	45% {margin-left: -100%;}									/**/
+	
+	50% {margin-left: -200%;}									/**/
+	70% {margin-left: -200%;}									/**/
+	
+	75% {margin-left: -300%;}									/**/
+	100% {margin-left: -300%;}									/**/
+}

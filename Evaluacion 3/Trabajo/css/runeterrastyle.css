@@ -176,16 +176,16 @@ section{
   margin:50px auto 0;									/*Establece los márgenes superior e inferior en 50 píxeles y el margen izquierdo y derecho se ajustarán automáticamente*/
 }
 
-section img{
-  width: 0px;					/*Establece el ancho de las imágenes en 0 píxeles, lo que significa que no se mostrarán inicialmente en la pantalla*/
-  flex-grow: 1;					/*Establece que las imágenes deben crecer o encogerse según sea necesario para llenar el espacio disponible en el contenedor flexible*/
-  object-fit: cover;			/*Establece cómo la imagen debe ajustarse dentro de su contenedorn en este caso que cubra todo el espacio*/
-  opacity: .8;					/*Establece la opacidad de las imágenes en 0.8*/
-  transition: .5s ease;			/*Establece la duración de la animación de transición cuando las imágenes cambian de tamaño con una funcion de aceleracion*/
+section img {
+  width: 0px;											/*Establece el ancho de las imágenes en 0 píxeles, lo que significa que no se mostrarán inicialmente en la pantalla*/
+  flex-grow: 1;											/*Establece que las imágenes deben crecer o encogerse según sea necesario para llenar el espacio disponible en el contenedor flexible*/
+  object-fit: cover;									/*Establece cómo la imagen debe ajustarse dentro de su contenedorn en este caso que cubra todo el espacio*/
+  opacity: .8;											/*Establece la opacidad de las imágenes en 0.8*/
+  transition: .5s ease;									/*Establece la duración de la animación de transición cuando las imágenes cambian de tamaño con una funcion de aceleracion*/
 }
 
-section img:hover{				
-  width: 300px;					/*Establece que la imagen aumenta a 300 pixeles al estar el icono del raton encima*/
-  opacity: 1;					/*Establece que la imagen vuelve a tener la opacidad inicial*/
-  filter: contrast(120%);		/*Establece que la imagen sube su contraste*/
+section img:hover {				
+  width: 300px;											/*Establece que la imagen aumenta a 300 pixeles al estar el icono del raton encima*/
+  opacity: 1;											/*Establece que la imagen vuelve a tener la opacidad inicial*/
+  filter: contrast(120%);								/*Establece que la imagen sube su contraste*/
 }

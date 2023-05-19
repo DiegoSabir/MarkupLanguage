@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>La web del invierno</title>
+<link rel="STYLESHEET" type="text/css" href="estilo3.css">
+</head> 
+<body>
+<div id="borde">
+<div id="contenedor">
+<div id="cabecera"><img src="images/cabecera.jpg" width="700" height="106" alt="La Web del Invierno" border="0">
+</div>
+<div id="navegador">
+<ul>
+<li><a href="#" class="enlacenav">Portada</a> </li>
+<li><a href="#" class="enlacenav">Invierno</a> </li>
+<li><a href="#" class="enlacenav">Diciembre a marzo</a> </li>
+<li><a href="#" class="enlacenav">La chimenea</a> </li>
+<li><a href="#" class="enlacenav">Deportes de invierno</a> </li>
+<li><a href="#" class="enlacenav">Contacto</a></li>
+</ul>
+</div>
+<div id="cuerpo">
+<h1>Título de la página</h1>
+<p>		
+En este artículo vamos a conocer la maquetación de paginas utilizando Hojas de estilos en cascada (CSS). Veremos cómo realizar este tipo de maquetación, junto con algunas ventajas e inconvenientes. Para muchos será todavía un campo por explorar. Aunque no vamos a entrar en grandes detalles, vamos a intentar dar a conocer la maquetación con CSS para que cubrir la posible laguna por parte del lector. En capítulos sucesivos ampliaremos la información y ofreceremos tutoriales más prácticos. 
+</p>
+<p>		
+Como se ha podido aprender en el Manual de CSS, las hojas de estilo en cascada ayudan a separar el contenido de la forma, es decir, los elementos que componen una página de la forma con la que se muestran. Además, CSS ayuda en gran medida a la definición de estilos en la página, ya que permite ajustar de una manera mucho más precisa cualquier aspecto de cualquier elemento de la página. 
+</p>
+<p>		
+La maquetación con CSS lleva la utilización de las hojas de estilo a su grado máximo, de manera que cualquier definición del aspecto de la página se realiza en la declaración CSS que enlazamos con el documento HTML. Para definir la situación de los elementos en la página se utilizan las capas, a las que se aplica un posicionamiento a través también de las hojas de estilo. 
+</p>
+<p>		
+Para crear las capas se utilizan etiquetas &lt;DIV&gt;, en las que se introducen los elementos que queramos que aparezcan en la página. Los elementos dentro de los &lt;DIV&gt; también se pueden anidar, para heredar las propiedades y posicionamiento de las capas padre. 
+</p>
+<p>		
+En la maquetación por capas se definen únicamente etiquetas &lt;DIV&gt; y las tablas sólo se utilizan para mostrar información tabulada, es decir, mostrada en filas y columnas. Cabe señalar que en la maquetación tradicional se utilizan las tablas para ajustar la posición.
+</p>
+<div id="navabajo">
+<a href="#">Volver</a> |
+<a href="#">Portada</a> |
+<a href="#">Mapa del sitio</a>
+</div>
+</div>
+<div id="lateral">
+<h2 class="titlat">Buscar</h2>
+<div id="fbuscar" class="cuerpolateral">
+<form>
+<div id="campotexto"><input type="text" name="criterio"></div>
+<div id="botonbuscar"><input type=image src="images/go.gif" width="25" height="15"></div>
+<div class="radio"><input type="radio" name="op" value="1"> En la Web del invierno</div>
+<div class="radio"><input type="radio" name="op" value="2"> En toda la Web</div>
+</form>
+</div>
+<h2 class="titlat">Registro</h2>
+<div id="registro" class="cuerpolateral">
+<a href="#">Registrese con nosotros</a> y obtenga muchas ventajas.
+</div>
+<h2 class="titlat">Otras informaciones</h2>
+<div id="otras" class="cuerpolateral">
+<ul>
+<li><a href="#">Quienes somos</a>
+<li><a href="#">Nuestra misión</a>
+<li><a href="#">Agenda de eventos</a>
+</ul>
+</div>  
+</div>
+<div id="pie">
+Pruebas de maquetación CSS © 2005 DesarrolloWeb.com
+</div>   
+</div>
+</div> 
+</body>

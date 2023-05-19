@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Ejemplo de estilos CSS en el propio documento</title>
+<style type="text/css">
+p span { color: red; }
+h1 span { color: blue; }
+p a span em { text-decoration: underline; color: green; }
+</style>
+</head>
+<body>
+<h1>Encabezado de <span>sección</span></h1>
+<p>Un párrafo de <span>texto</span>. Ejemplifica uso de selector descendente.</p>
+<p>Un nuevo párrafo que dispone de <a href="#">un enlace <span>singular con <em>enfasis</em> modificado</span></a>.</p>
+<p>Los estilos de la regla anterior <span>se aplican a los elementos de tipo &lt;em&gt; que se encuentren <em>dentro
+de elementos</em> </span>de tipo &lt;span&gt;, que a su vez se encuentren dentro de elementos de tipo &lt;a&gt; que se
+encuentren dentro de elementos de tipo &lt;p&gt;.</p>
+
+</body>
+</html>

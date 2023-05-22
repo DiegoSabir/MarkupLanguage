@@ -4,7 +4,7 @@
 </head>
 
 <body>
-<table>
+<table border ="1">
 <caption>DISCO 1 </caption>
 <tr><td>Artista</td><td>Disco</td></tr>
 {
@@ -16,7 +16,9 @@ else ()
 }
 </table>
 
-<table>
+<br/>
+
+<table border ="1">
 <caption>DISCO 2 </caption>
 <tr><td>Artista</td><td>Disco</td></tr>
 {

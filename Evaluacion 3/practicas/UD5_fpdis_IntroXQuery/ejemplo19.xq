@@ -4,7 +4,7 @@
 </head>
 
 <body>
-<table>
+<table border="1">
 <caption>CANCIONES POR DISCO </caption>
 <tr><td>Artista</td><td>Nombre</td><td>Grabada en</td></tr>
 {

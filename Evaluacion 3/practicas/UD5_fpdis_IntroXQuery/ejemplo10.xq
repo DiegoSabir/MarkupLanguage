@@ -4,7 +4,7 @@
 </head>
 
 <body>
-<table>
+<table border="1">
 <caption>CANCIONES DE METALLICA </caption>
 <tr><td>Canción</td><td>Disco</td><td>Grabada en</td></tr>
 {
